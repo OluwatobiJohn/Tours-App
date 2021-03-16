@@ -37,10 +37,14 @@ const App = () => {
   }
   if (tours.length === 0) {
     return (
-      <>
-        <h3>No tours Left</h3>
-        <button onClick={getTours}>refresh</button>
-      </>
+      <main>
+        <div className="title">
+          <h2>No tours Left</h2>
+          <button className="btn" onClick={getTours}>
+            refresh
+          </button>
+        </div>
+      </main>
     );
   }
   return (
